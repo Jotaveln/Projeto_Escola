@@ -118,5 +118,3 @@ def quadra():
 #quadra()
 
 
-git config --global user.email "jotave2903@gmail.com"
-git config --global user.name "Jotaveln"
