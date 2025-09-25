@@ -119,4 +119,3 @@ def quadra():
 #quadra()
 a
 
-
