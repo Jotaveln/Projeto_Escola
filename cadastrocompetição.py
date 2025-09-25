@@ -111,10 +111,11 @@ def quadra():
             print("SEGUNDA      | TERÇA   | QUARTA | QUINTA   |  SEXTA"
               "\nAdministração|Finanças |Ds      |Enfermagem|Aleatório"   )
         
+        
 #menu()
 #escola()
 #secretaria()
 #cozinha()
 #quadra()
-
+a
 
