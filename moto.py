@@ -17,6 +17,8 @@ class moto:
             self.velocidade = 0
         print(f"{self.modelo} reduziu a velocidade para {self.velocidade} km/h.")
         
+    
+        
         
 moto1 = Moto("Bmw",2023,"Preto","1200 Gs")
-moto2 = Moto("Honda",2020,"Vermelho","1200 Gs")
+moto2 = Moto("Honda",2020,"Vermelho","Cbr 650")
