@@ -58,5 +58,5 @@ class Aluno(Pessoa):
 #         print("-",cls.__name__)
     
 #    if __name__ == "__main__":
-#         main()
-   
+#         main()        
+  
