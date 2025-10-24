@@ -1,29 +1,45 @@
 class Pessoa:
-    def __init__(self, nome: str,cpf: int)-> None:
+    def __init__(self, nome: str)-> None:
         self.nome = nome 
-        self.cpf = cpf
 
     def apresentar(self) -> str:
-        return f"Olá, eu sou {self.nome}. e tenho cpf {self.cpf}."
+        return f"Olá, eu sou {self.nome}."
     
 class Aluno(Pessoa):
-    def __init__(self, nome: str, matricula: str, cpf: int) -> None:
+    def __init__(self, nome = None, matricula = None) -> None:
+        if nome is None:
+            nome = input("Digite o nome do Aluno: ")
+        if disciplina is None:
+            disciplina = input("Digite a matricula do aluno: ")
         super().__init__(nome)
-        super().__init__(cpf)
         self.matricula = matricula
 
     def apresentar(self) -> str:
         base = super().apresentar()
         return f"{base} e sou aluno, matricula {self.matricula}."                                          
     
-# class Professor(Pessoa):
-#     def __init__(self, nome: str, disciplina: str, cpf: int) -> None:
-#         super().__init__(nome)
-#         super().__init__(cpf)
-#         self.disciplina = disciplina
+class Professor(Aluno):
+    def __init__(self, nome = None, disciplina = None, matricula = None):
+        if nome is None:
+            nome = input("Digite o nome do professor: ")
+        if disciplina is None:
+            disciplina = input("Digite a disciplina do professor: ")
+        if matricula is None:
+            matricula = int(input("Digite a matricula do professor: "))
+        super().__init__(nome, matricula)
+        self.disciplina = disciplina
 
-#     def apresentar(self) -> str:
-#         return f"Professor {self.nome} de {self.disciplina}."
+    def apresentar(self) -> str:
+        base = super().apresentar()
+        return f"Professor {self.nome} de {self.disciplina}."
+
+
+p= Pessoa("Gilberto")
+a= Aluno()
+pr= Professor()    
+print(p.apresentar())
+print(a.apresentar())   
+print(pr.apresentar())
     
 # class BolsaMixin:
 #     def calcular_bolsa(self) -> float:
@@ -34,7 +50,7 @@ class Aluno(Pessoa):
 #         base = super().apresentar()
 #         return f"{base} e recebo bolsa de R${self.calcular_bolsa:.2f} reais."
 
-# def apresentar_todos(pessoas: list[Pessoa]) -> list[str]:
+# def apresentar_todos(pessoas: list[Pessoa]) -> list[str]:                           
 #     return [p.apresentar() for p in pessoas]
 
 # def main() -> None:
