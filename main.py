@@ -1,4 +1,4 @@
-from AtividadeDeHeranca import Cliente, Alimento, Bebida, Higiene, Limpeza
+from Mercado import Cliente, Alimento, Bebida, Higiene, Limpeza
 C = Cliente()
 C.cadastrar()
 print(C)
