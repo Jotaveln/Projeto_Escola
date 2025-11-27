@@ -82,7 +82,7 @@ class Gerente(Funcionario):
             self.equipe_supervisionada.append(novo_funcionario)
             print(f"{self.nome} contratou {novo_funcionario.nome}.")
 
-class LavadorDePratos(Funcionario):
+class LavadorDePratos(Funcionario): 
    
 
 
