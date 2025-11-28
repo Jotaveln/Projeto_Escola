@@ -39,7 +39,7 @@ class Garçom(Funcionario):
         else:
             print(f"{self.nome} está atendendo a mesa {self.mesa_atendida}.")
     def servir_pedido(self, pedido):
-        if pedido is none:
+        if pedido is None:
             print(f"{self.nome} não tem pedidos para servir no momento.")
         else:
             print(f"{self.nome} está servindo o pedido: {pedido}.")
@@ -82,7 +82,7 @@ class Gerente(Funcionario):
             self.equipe_supervisionada.append(novo_funcionario)
             print(f"{self.nome} contratou {novo_funcionario.nome}.")
 
-class LavadorDePratos(Funcionario): 
+
    
 
 

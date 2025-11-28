@@ -47,6 +47,7 @@ class Produto:
     def depositar(self, valor):
         if valor > 0:
             self.__preco += valor
+    
         
 produto2 = Produto(100)
 print("preço inicial:", produto2.preco)
